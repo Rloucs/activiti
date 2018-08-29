@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="styleSheet" href="../css/index.css" type="text/css"/>
+
+	<!-- <link rel="styleSheet" href="../css/index.css" type="text/css"/> -->
+<title>Insert title here</title>
+</head>
+<body>
+    <div class="header">
+        <div class="float col-2">
+            <div class="float col-1 margin-left-div"><label>我的任务</label></div>
+            <div class=" float col-1 margin-left-div"><label>发起申请</label></div>
+            <div class=" float col-1"></div>
+        </div>
+        <div>
+            <div class="float-r col-3 align-cen"><label>我的信息</label></div>
+        </div>
+    </div>
+    <!-- <div style="width:500px;height:500px;border: solid 1px;background-color: :blue;"></div> -->
+    <div class="body">
+        <div id="plan" >
+            <div  class="plan">
+                <form action="">
+                    <div>
+                        <label class="label float">标题：</label>
+                        <input type="text" id="title" />
+                    </div>
+                     <div>
+                        <label  class="label float">请假天数：</label>
+                        <input type="text" id="dayCount" />
+                    </div>
+                     <div>
+                        <label  class="label float">开始/结束日期：</label>
+                        <input type="text" id="startDate"  autocomplete="off"/>
+                      <!--   <input type="text" id="endDate"/> -->
+                    </div>
+                    <div>
+                        <label  class="label float">申请理由：</label>
+                        <input type="text" id="reason" />
+                    </div>
+                    <button type="submit" class="btn submit" style="display: none;">提交申请</button>
+                    <button type="reset" class="btn reset" style="display: none;">取消</button>
+                    <button type="button" id="apply" class="btn apply">审批通过</button>
+                    <button type="button" id="noApply" class="btn no-apply">驳回申请</button>
+                </form>
+            </div>
+        </div>
+    
+    </div>
+   
+   <script type="text/javascript" src="../js/jquery.min.js"></script>
+   <script type="text/javascript" src="../js/index.js"></script>
+   <script type="text/javascript" src="../plugin/laydate/laydate.js"></script>
+</body>
+</html>
